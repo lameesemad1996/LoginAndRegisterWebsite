@@ -6,36 +6,36 @@
 </head>
 <body>
 
-<form action="upload.php" method="POST" enctype="multipart/form-data">
+<form action="submit.php" method="POST" enctype="multipart/form-data">
   <label>
     <p class="label-txt">ENTER YOUR EMAIL</p>
-    <input type="text" class="input">
+    <input type="text" class="input" name="email" id="email">
     <div class="line-box">
       <div class="line"></div>
     </div>
   </label>
   <label>
     <p class="label-txt">ENTER YOUR NAME</p>
-    <input type="text" class="input">
+    <input type="text" class="input" name="name" id="name"> 
     <div class="line-box">
       <div class="line"></div>
     </div>
   </label>
   <label>
     <p class="label-txt">ENTER YOUR PASSWORD</p>
-    <input type="password" class="input">
+    <input type="password" class="input" name="password" id="password">
     <div class="line-box">
       <div class="line"></div>
     </div>
   </label>
-  <input type="file" name="image">
   <br>
   <br>
-  <button type="button">Upload Photo</button>
+  <input type="file" name="image" id="image">
   <br>
   <br>
-  <br>
-  <button type="submit">Submit</button>
+  
+  <button type="submit" name="submit" id="submit">Submit</button>
+
 </form>
 
 <script src="js/form.js"></script>
